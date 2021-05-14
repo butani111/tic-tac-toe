@@ -104,6 +104,7 @@ document.getElementById('new-game-btn').onclick = function(e) {
   for (let i = 0; i < boxes.length; i++) {
     boxes[i].innerHTML = '';
   }
+  document.getElementById('msg-on-top').innerHTML = ''
   userNameBoxes[userTurn].style.backgroundColor = userNameColor[1]
   userNameBoxes[0].style.backgroundColor = userNameColor[0];
 }
