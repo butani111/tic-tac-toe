@@ -3,3 +3,8 @@ This is a duo(two player) game in which the winner will be the one who will comp
 
 
 <img src="Demo-Image1.png" width = 300>
+
+
+Link : https://shyam-tic-tac-toe.netlify.app/
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5e158ee7-2151-4030-80b1-7417c25a5d39/deploy-status)](https://app.netlify.com/sites/shyam-tic-tac-toe/deploys)
