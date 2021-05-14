@@ -11,6 +11,7 @@ let noOfLines = 3                                    // Change no. of squares (n
 let totalUser = 2;                                   // Change no. of users
 let symbols = ['X', 'O']                             // Add/Remove symbols as no. of users changes
 let userNameColor = ['rgb(137, 218, 137)', 'white']  // Color of box which indicates that whose turn is it now
+let turnsSoFar = 0
 
 // Declare Onclick function for all squares
 
@@ -86,8 +87,23 @@ for (let i = 0; i < boxes.length; i++) {
         return
       }
 
+      turnsSoFar += 1
+      if(turnsSoFar >= noOfLines*noOfLines) {
+        document.getElementById('msg-on-top').innerHTML = 'Tie !!, It seems like you both are good at this.'
+      }
+
       userTurn = (userTurn+1) % totalUser;
       userNameBoxes[userTurn].style.backgroundColor = userNameColor[0]
     }
   }
+}
+
+// Onclick funcion for New-game-btn
+
+document.getElementById('new-game-btn').onclick = function(e) {
+  for (let i = 0; i < boxes.length; i++) {
+    boxes[i].innerHTML = '';
+  }
+  userNameBoxes[userTurn].style.backgroundColor = userNameColor[1]
+  userNameBoxes[0].style.backgroundColor = userNameColor[0];
 }

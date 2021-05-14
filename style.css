@@ -42,13 +42,15 @@
   background-color: yellow;
   cursor: pointer;
 }
-#user-name{
+#user-name, #new-game-btn{
   display: flex;
 }
-.user{
+.user, #new-game-btn{
   width: 150px;
   height: 30px;
   text-align: center;
+  /* align-items: center; */
+  /* justify-content: center; */
   font-size: 20px;
   border: 3px solid green;
   border-radius: 5px;
@@ -56,6 +58,15 @@
 }
 #user1{
   background-color: rgb(137, 218, 137);
+}
+#new-game-btn{
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+  width: 100px;
+  height: auto;
+  background-color: rgb(49, 11, 44);
+  cursor: pointer;
 }
 
 @media (max-width: 750px) {
