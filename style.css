@@ -3,87 +3,147 @@
       @Author : Shyam Butani (butanishyam111@gmail.com)
  */
 
- 
-#main{
-  width: 50%;
+
+/* ----------------- Common classes ----------------------- */
+
+.border-top {
+  border-top: 5px ridge rgb(160, 236, 160);
+}
+
+.border-bottom {
+  border-bottom: 5px ridge rgb(160, 236, 160);
+}
+
+.border-left {
+  border-left: 5px ridge rgb(160, 236, 160);
+}
+
+.border-right {
+  border-right: 5px ridge rgb(160, 236, 160);
+}
+
+.border1 {
+  border: 5px ridge rgb(160, 236, 160);
+}
+
+
+/* ----------------------- Regular classes ----------------------- */
+
+
+/* Size of the screen */
+#main {
+  width: 70%;
+  max-width: 500px;
   height: auto;
-  margin: 20px auto;
-  padding: 10px;
+  margin: 2% auto;
+  padding: 0 2%;
   border: 4px solid black;
   border-radius: 10px;
 }
-#top{
+
+/* Title */
+#top {
   text-align: center;
-  /* background-color: red; */
 }
-#msg-on-top{
+
+/* Winner status */
+#msg-on-top {
   display: block;
-  color: green;
-  font-size: 20px;
+  color: black;
+  font-size: 1.5rem;
   text-align: center;
-  /* background-color: black; */
-  margin: 2px auto;
+  margin: 15px auto;
+  background-color: rgb(158, 240, 158);
+  border-radius: 15px;
 }
-.row{
+
+.row {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
 }
-#screen span{
+
+/* Boxes to mark */
+#screen span {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: 50px;
-  border: 2px solid black;
-  width: 70px;
-  height: 70px;
-  margin: 23px;
-  background-color: yellow;
+  color: black;
+  font-size: 5rem;
+  width: 25%;
+  background-color: white;
   cursor: pointer;
 }
-#user-name, #new-game-btn{
-  display: flex;
+
+#screen span:before {
+  content: "";
+  padding-top: 100%;
 }
-.user, #new-game-btn{
-  width: 150px;
-  height: 30px;
-  text-align: center;
-  /* align-items: center; */
-  /* justify-content: center; */
-  font-size: 20px;
-  border: 3px solid green;
-  border-radius: 5px;
-  margin: 10px auto;
-}
-#user1{
+
+#screen span:hover {
   background-color: rgb(137, 218, 137);
 }
-#new-game-btn{
+
+#user-name,
+#new-game-btn {
+  display: flex;
+}
+
+.user,
+#new-game-btn {
+  width: 35%;
+  height: auto;
+  text-align: center;
+  font-size: 1.3rem;
+  border: 3px solid green;
+  border-radius: 5px;
+  margin: 3% auto;
+  padding: 1% 0;
+}
+
+#user1 {
+  background-color: rgb(137, 218, 137);
+}
+
+#new-game-btn {
   justify-content: center;
   color: white;
-  font-size: 18px;
-  width: 100px;
-  height: auto;
+  font-size: 1.2rem;
+  width: 30%;
   background-color: rgb(49, 11, 44);
   cursor: pointer;
 }
 
-@media (max-width: 750px) {
-  #main{
-    width: 90%;
+/* ----------------------- For Medium screen ----------------------- */
+
+@media (max-width: 560px) {
+  #main {
+    width: 95%;
+    padding: 1%;
   }
-  #msg-on-top{
-    /* font-size: 15px; */
+
+  #msg-on-top {
+    font-size: 1.3rem;
   }
-  #screen span{
-    font-size: 40px;
-    width: 50px;
-    height: 50px;
-    margin: 12px 22px;
+
+  #screen span {
+    font-size: 4rem;
   }
-  .user{
-    width: 130px;
+
+  .user {
+    font-size: 1.1rem;
+  }
+
+  #new-game-btn {
+    font-size: 1rem;
+    width: 40%;
   }
 }
 
+/* ----------------------- For smaller screen ----------------------- */
+
+@media (max-width: 460px) {
+  #screen span {
+    font-size: 3.5rem;
+  }
+}
