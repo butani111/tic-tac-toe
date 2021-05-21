@@ -2,7 +2,7 @@
 This is a duo(two player) game in which the winner will be the one who will complete the pattern first.
 
 
-<img src="Demo-Image1.png" width = 300>
+<img src="Demo-Image.png" width = 300>
 
 
 Link : https://shyam-tic-tac-toe.netlify.app/
