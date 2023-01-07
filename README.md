@@ -7,7 +7,9 @@ This is a duo(two player) game in which the winner will be the one who will comp
 
 Link : https://shyam-tic-tac-toe.netlify.app/
 
-**Technologies Used:** HTML | CSS | Javascript
+## Technologies Used
+HTML | CSS | Javascript
+#
 
 
 
